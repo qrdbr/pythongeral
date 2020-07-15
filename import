@@ -1,0 +1,22 @@
+import re as regex #regex = alias
+
+#importacao explicita sem necessidade de uso com qualifificador
+
+from collections import defaultdict, Counter
+
+lookup = defaultdict()
+my_counter = Counter()
+
+#importacao mais abrangente - nao restritiva
+import collections
+
+lookup = collections.defaultdict()
+my_counter = collections.Counter()
+
+#importacao mais abrangente - nao restritiva
+#uso de alias
+import collections as clt
+
+lookup = clt.defaultdict()
+my_counter = clt.Counter()
+
