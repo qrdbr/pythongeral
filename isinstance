@@ -1,0 +1,50 @@
+def class_makedouble(x):
+    ''' multiplica entrada por 2'''
+    return x * 2
+
+def apply_to_one(f):
+    '''chama a funcao f1 '''
+    return f1(f)
+
+def f1(y):
+    
+    if isinstance(y,int):
+        return "Com argumento function: " + str(y)
+    else:        
+        return "Sem argumento function" 
+    
+
+my_double = class_makedouble
+
+x = apply_to_one(my_double)
+print("my_double: \n",my_double)
+print("type: ", type(my_double))
+print("\nx:",x)
+print("--------------------------------")
+    
+'''
+RESULTADO:
+
+my_double: 
+ <function class_makedouble at 0x00000240F622E730>
+type:  <class 'function'>
+
+x: Sem argumento function
+'''
+
+my_double = class_makedouble(2) #pode ser um float tb exemplo 2.5 
+
+x = apply_to_one(my_double)
+print("my_double: \n",my_double)
+print("type: ",type(my_double))
+print("\nx:",x)
+
+'''
+RESULTADO:
+    
+my_double: 
+ 4
+type:  <class 'int'>
+
+x: Com argumento function: 4
+'''
