@@ -1,0 +1,6 @@
+#doctring --> cadeia de caracteres de documentacao
+
+def function1(x):
+  ''' explicacao da function1 
+      descricritivo ''''
+ return "teste"
