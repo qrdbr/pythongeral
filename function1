@@ -1,0 +1,7 @@
+def my_print(message="minha msg default"):
+    print(message)
+    
+
+my_print("Hello") #Hello
+
+my_print() #minha msg default
