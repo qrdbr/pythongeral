@@ -1,0 +1,12 @@
+string_simples = 'simples'
+string_composta = "composta"
+
+#caracter especial
+#r"" --> string bruta
+tab_string = "\t"
+len(tab_string) #1
+
+#nao eh caracter especial
+string = r"\t"
+print(len(string)) #2
+print(string)      #"\t"
