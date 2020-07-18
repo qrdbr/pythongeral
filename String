@@ -10,3 +10,18 @@ len(tab_string) #1
 string = r"\t"
 print(len(string)) #2
 print(string)      #"\t"
+
+#multiplas strings
+multiplas = """primeira linha
+segunda linha
+ultima linha """
+
+print(multiplas)
+
+'''
+resultado:
+primeira linha
+segunda linha
+ultima linha 
+'''
+
