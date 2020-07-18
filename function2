@@ -1,0 +1,6 @@
+def subtrair(a=0, b=0):
+    return a-b
+
+subtrair(10,5) #5
+subtrair(0,5)  #-5
+subtrair(b=15) #-15
