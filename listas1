@@ -1,0 +1,15 @@
+lista_inteiros  = [1,2,3]
+
+lista_mista = ["String", 0.1, True]
+
+lista_de_lista = [lista_inteiros, lista_mista, []]
+
+print(lista_inteiros)
+print
+print(lista_mista)
+print
+print(lista_de_lista)
+
+print(len(lista_inteiros)) #3
+print
+print(sum(lista_inteiros)) #6
