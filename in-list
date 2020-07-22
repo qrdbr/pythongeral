@@ -1,0 +1,8 @@
+x = list(range(10000))
+print(x)
+
+print(888 in x) #true
+
+print(10050 in x) #false
+
+#examinacao de cada elemento individual da lista
