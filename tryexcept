@@ -1,0 +1,18 @@
+try:
+    print(0/0)
+#except ErroDivisaoZero:
+#NameError: name 'ErroDivisaoZero' is not defined    
+except ZeroDivisionError:
+    print ("Ops! Divisao por zero nao permitida")
+
+#Resultado:
+#Ops! Divisao por zero nao permitida    
+    
+    
+try:
+    print(0/0)
+except ZeroDivisionError as err:
+    print ("Ops! Acao nao permitida: ", err)
+    
+#Resultado:
+#Ops! Acao nao permitida:  division by zero
