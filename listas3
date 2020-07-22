@@ -1,0 +1,20 @@
+x = list(range(10))
+print(x) #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+tres_primeiros = x[:3]
+print(tres_primeiros) #[0, 1, 2]
+
+terceiro_ao_ultimo = x[3:]
+print(terceiro_ao_ultimo) #[3, 4, 5, 6, 7, 8, 9]
+
+um_ao_quarto = x[1:5]
+print(um_ao_quarto) #[1, 2, 3, 4]
+
+ultimos_tres = x[-3:]
+print(ultimos_tres) #[7, 8, 9]
+
+sem_primeiro_sem_ultimo = x[1:-1]
+print(sem_primeiro_sem_ultimo) #[1, 2, 3, 4, 5, 6, 7, 8]
+
+copia_x = x[:]
+print(copia_x) #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
