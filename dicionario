@@ -1,0 +1,17 @@
+dicionario_vazio = {}       #Pythonic
+dicionario_vazio = dict()   #- Pythonic
+notas = {"Joel" : 80, "Tim" : 90 }
+
+nota_joel = notas["Joel"]
+print(nota_joel) #80
+
+try:
+    nota_Kate = notas["Kate"]
+except KeyError as err:
+    print("Erro no processamento\nChave inexistente:", err)
+
+#Erro no processamento
+#Chave inexistente: 'Kate'
+    
+print("Joel" in notas) #True
+print("Kate" in notas) #False
