@@ -1,0 +1,6 @@
+x,y = [1,2]
+print(x) #1
+print(y) #2
+
+_,b = [1,2]
+print(b) #2
