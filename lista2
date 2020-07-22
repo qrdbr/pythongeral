@@ -1,0 +1,18 @@
+x = list(range(10))
+print(x) #[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+zero = x[0]
+print(zero) #0
+
+hum = x[1]
+print(hum) #1
+
+nono = x[-1]
+print(nono) #9
+
+oitavo = x[-2]
+print(oitavo) #8
+
+x[0] = -1
+
+print(x)#[-1, 1, 2, 3, 4, 5, 6, 7, 8, 9]
