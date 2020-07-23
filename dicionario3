@@ -1,0 +1,32 @@
+tweet = {
+        "usuario" : "D. Alexandre",
+        "texto" : "Data Science eh show",
+        "retweet_contador" : 100,
+        "hashtags" : ["#data", "#science", "#datascience"]
+        }
+
+print("tweet:\n",tweet)
+print("------------------------------------")
+tweet_keys = tweet.keys()
+print("tweet_keys:\n",tweet_keys)
+print("------------------------------------")
+tweet_values = tweet.values()
+print("tweet_values:\n",tweet_values)
+print("------------------------------------")
+tweet_itens = tweet.items()
+print("tweet_itens:\n",tweet_itens)
+
+'''
+RESULTADO
+tweet:
+ {'usuario': 'D. Alexandre', 'texto': 'Data Science eh show', 'retweet_contador': 100, 'hashtags': ['#data', '#science', '#datascience']}
+------------------------------------
+tweet_keys:
+ dict_keys(['usuario', 'texto', 'retweet_contador', 'hashtags'])
+------------------------------------
+tweet_values:
+ dict_values(['D. Alexandre', 'Data Science eh show', 100, ['#data', '#science', '#datascience']])
+------------------------------------
+tweet_itens:
+ dict_items([('usuario', 'D. Alexandre'), ('texto', 'Data Science eh show'), ('retweet_contador', 100), ('hashtags', ['#data', '#science', '#datascience'])])
+'''
