@@ -1,0 +1,22 @@
+notas = {"Joel" : 80, "Tim" : 90 }
+
+print(notas)
+print(len(notas)) #2
+
+#alternativa para evitar try/except 
+joels_nota = notas.get("Joel","n/a")
+kates_nota = notas.get("Kates", "n/a")
+sem_nota = notas.get("Sem correspondencia - Sem retorno default")
+print()
+print(joels_nota) #80
+print(kates_nota) #n/a
+print(sem_nota)   #None 
+
+print()
+#atualiza item da lista
+notas["Tim"] = 99
+#adiciona item a lista
+notas["Kate"] = 70
+
+print(notas)      #{'Joel': 80, 'Tim': 99, 'Kate': 70}
+print(len(notas)) #3
