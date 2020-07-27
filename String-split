@@ -1,0 +1,10 @@
+document = "Aqui eh uma frase. Aqui eh outra frase. Teremos mais frase? Esta eh a frase final!"
+quebra = document
+print(quebra.split())
+
+'''
+RESULTADO:
+
+['Aqui', 'eh', 'uma', 'frase.', 'Aqui', 'eh', 'outra', 'frase.', 'Teremos', 'mais', 'frase?', 'Esta', 'eh', 'a', 'frase', 'final!']
+
+'''
