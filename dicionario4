@@ -1,0 +1,41 @@
+#document = "Quantas palavras repetidas temos aqui. Quantas palavras repetidas temos aqui."
+#document = document + "Muitas ou poucas nao sabemos. Iremos ver na contagem. Deve ter muitas"
+document = "Quantas letras repetidas temos aqui?"
+
+#estrategia1 - if/else
+word_counts = {}
+for word in document:
+    if word in word_counts:
+        word_counts[word] +=1
+    else:
+        word_counts[word] = 1
+        
+print (word_counts)
+print()
+
+#estrategia2 - via try/except
+word_counts = {}
+for word in document:
+    try:
+        word_counts[word] +=1
+    except KeyError:
+        word_counts[word] = 1
+        
+print (word_counts)
+print()
+
+#estrategia3  - via get
+word_counts = {}
+for word in document:
+    contador = word_counts.get(word,0)
+    word_counts[word] = contador + 1
+        
+print (word_counts)
+print()
+
+'''
+RESULTADO
+
+{'Q': 1, 'u': 2, 'a': 5, 'n': 1, 't': 4, 's': 4, ' ': 4, 'l': 1, 'e': 4, 'r': 2, 'p': 1, 'i': 2, 'd': 1, 'm': 1, 'o': 1, 'q': 1, '?': 1}
+
+'''
