@@ -1,0 +1,23 @@
+from collections import defaultdict
+
+minha_lista = defaultdict(list)
+print(minha_lista) # {}
+minha_lista[2].append(1) 
+print(minha_lista) #{2: [1]}
+
+dic = {2:[1]}
+print(dic) #{2: [1]}
+
+print(dic==minha_lista) #True
+
+meu_dicionario = defaultdict(dict)
+meu_dicionario["Playmobil"]["Estado"] = 'SP'
+print(meu_dicionario) #{'Playmobil': {'Estado': 'SP'}}
+
+meu_par = defaultdict(lambda: [0,0]) #sem lambda gera erro
+meu_par[1][0] = 1 #[1] --> CHAVE / [0] --> POSICAO DE [0,0] / 1 --> VALOR ATRIBUICAO
+print(meu_par) #{1: [1, 0]})
+
+meu_par = defaultdict(lambda: [0,0]) #sem lambda gera erro
+meu_par[9][1] = 4 #[1] --> CHAVE / [1] --> POSICAO DE [0,0] / 4 --> VALOR ATRIBUICAO
+print(meu_par) #{9: [0, 4]})
