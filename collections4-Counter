@@ -1,0 +1,32 @@
+from collections import Counter
+
+document = "Frase um. Frase dois. Frase tres. Frase final. "
+document += "Frase um. Frase dois. Frase tres. Frase final. "
+document += "Frase quatro. Frase cinco. Frase seis. Frase final. "
+document += "Frase seis. Frase sete. Frase oito. Frase final. "
+
+
+quebra = document.split() 
+print(quebra)
+print()
+
+#Estrategia com collection para contagem de ocorrenias
+dict_counter = Counter(quebra)
+print(dict_counter)
+print()
+
+'''
+Counter({'Frase': 16, 'final.': 4, 'um.': 2, 'dois.': 2, 'tres.': 2, 'seis.': 2, 'quatro.': 1, 'cinco.': 1, 'sete.': 1, 'oito.': 1})
+'''
+
+#imprimir as 5 palavras mais frequentes
+for frase, count in dict_counter.most_common(5):
+    print (frase, count)
+    
+'''
+Frase 16
+final. 4
+um. 2
+dois. 2
+tres. 2
+'''
