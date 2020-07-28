@@ -1,0 +1,18 @@
+from datetime import datetime
+
+superlista = list(range(50000000))
+#print(superlista)
+lista = ['a', 'b','c'] + superlista
+listafinal = lista + ['f','.']
+
+now1 = datetime.now()
+print("naotem" in listafinal) #false
+now2 = datetime.now()
+print(now2-now1) #0:00:05.923706
+
+cjto = set(listafinal)
+
+now1 = datetime.now()
+print("naotem" in cjto) #False
+now2 = datetime.now()
+print(now2-now1) #0:00:00.015887
