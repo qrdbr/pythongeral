@@ -1,10 +1,20 @@
-document = "Aqui eh uma frase. Aqui eh outra frase. Teremos mais frase? Esta eh a frase final!"
-quebra = document
-print(quebra.split())
+document = "Frase um. Frase dois. Frase tres. Frase final."
+
+quebra = document.split() 
+print(quebra)
 
 '''
-RESULTADO:
+['Frase', 'um.', 'Frase', 'dois.', 'Frase', 'tres.', 'Frase', 'final.']
+'''
 
-['Aqui', 'eh', 'uma', 'frase.', 'Aqui', 'eh', 'outra', 'frase.', 'Teremos', 'mais', 'frase?', 'Esta', 'eh', 'a', 'frase', 'final!']
+word_counts = {}
+for word in quebra:
+    contador = word_counts.get(word,0)
+    word_counts[word] = contador + 1
+        
+print (word_counts)
+print()
 
+'''
+{'Frase': 4, 'um.': 1, 'dois.': 1, 'tres.': 1, 'final.': 1}
 '''
