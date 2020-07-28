@@ -1,0 +1,24 @@
+cjto = set()
+print(cjto) #set()
+
+cjto.add(1)
+print(cjto) #{1}
+
+cjto.add(2)
+print(cjto) #{1, 2}
+
+#ignora a inclusao do 2
+cjto.add(2)
+print(cjto) #{1, 2}
+
+print()
+print(len(cjto))
+
+print()
+#in eh uma operacao mais rapida em cjtos
+#com muitos elementos, in eh mais rapido em cjto do k uma lista
+pesquisa1 = 2 in cjto
+pesquisa2 = 5 in cjto
+
+print(pesquisa1) #True
+print(pesquisa2) #False
