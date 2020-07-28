@@ -1,0 +1,31 @@
+from collections import Counter
+
+document = "Frase um. Frase dois. Frase tres. Frase final."
+
+quebra = document.split() 
+print(quebra)
+print()
+'''
+['Frase', 'um.', 'Frase', 'dois.', 'Frase', 'tres.', 'Frase', 'final.']
+'''
+
+#Estrategia 1 de contagem de ocorrencias
+word_counts = {}
+for word in quebra:
+    contador = word_counts.get(word,0)
+    word_counts[word] = contador + 1
+        
+print (word_counts)
+print()
+
+'''
+{'Frase': 4, 'um.': 1, 'dois.': 1, 'tres.': 1, 'final.': 1}
+'''
+
+#Estrategia2 com collection para contagem de ocorrenias
+dict_counter = Counter(quebra)
+print(dict_counter)
+
+'''
+Counter({'Frase': 4, 'um.': 1, 'dois.': 1, 'tres.': 1, 'final.': 1})
+'''
