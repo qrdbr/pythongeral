@@ -1,0 +1,7 @@
+lista = [1,2,3,1,2,3]
+print(lista) #[1, 2, 3, 1, 2, 3]
+print("Qtd lista:",len(lista)) #Qtd lista: 6
+
+cjto = set(lista)
+print(cjto) #{1, 2, 3}
+print("Qtd cjto:",len(cjto)) #Qtd cjto: 3
