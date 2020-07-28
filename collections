@@ -17,7 +17,7 @@ for word in document:
     #na busca por uma chave que nao exite, add 1 valor para a chave
     #com base na funcao de argumento zero que foi fornecido na criacao 
     #no caso (int) - Exemplo F eh a primeira fez e nao tem no dicionario,
-    #entao cria a entrada {F:1}
+    #entao cria a entrada {F:0}
     contagem_letras[word] += 1
     print(contagem_letras)
     print()
