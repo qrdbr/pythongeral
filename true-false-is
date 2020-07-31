@@ -1,0 +1,13 @@
+#Comparacao que retorna sempre False
+
+print(None is True)
+list_empt = []
+print(list_empt is True)
+dict_empt = {}
+print(dict_empt is True)
+cjto = set()
+print(cjto is True)
+#spyder sugere uso do == ou != para str, bytes, int, float...
+print("" is True)
+print(0 is True)
+print(0.00 is True)
