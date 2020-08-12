@@ -1,0 +1,12 @@
+valores_compras = [12, 99, 75]
+
+all(v<100 for v in valores_compras)
+
+print(all(v for v in valores_compras)) #True - iterable com elementos entao eh True
+
+print(all(v<100 for v in valores_compras)) #True - todos elementos < 100.00
+
+valores_compras = [12, 99, 75,100]
+
+print(all(v<100 for v in valores_compras)) #False - 1 elemento >= 100
+      
