@@ -1,0 +1,21 @@
+
+#all(iterable)
+#Retorna True se todos os elementos de iterable sao verdadeiros 
+#Retorna iterable = vazio
+
+
+msg = "Cupom valido"
+valores_compras = [12, 99, 75, 10]
+
+if all(v<100 for v in valores_compras):
+    msg='Cupom de desconto valido se pelo menos '\
+        'um dos produtos com valor superior a R$ 99,99.'
+    
+print(msg)
+
+#resultado
+#Cupom de desconto valido se pelo menos um dos produtos com valor superior a R$ 99,99.
+
+
+#valores_compras = [12, 99, 75, 10]
+#Cupom valido
