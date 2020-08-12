@@ -1,0 +1,29 @@
+#any(iterable)
+#Retorna True se algum elemento de iterable for True 
+#Retorna False se iterable = vazio!!!
+
+print("Testes com any")
+print(any([])) #False
+
+print(any([True, 1, {3}, []])) #True --> True, 1 e {3} sao verdadeiros
+
+print(any(["", {3}, []])) #True --> elementro {3} eh verdadeiro
+
+print(any([True, {}, [] ])) #True --> elemento True eh verdadeiro
+
+print(any(["", {}, [] ])) #False --> iterable vazio
+
+print(any(["Teste",{},[]])) #True --> iterable True para "Teste"
+
+
+print("\nTestes com all")
+#all(iterable)
+#Retorna True se TODOS os elementos de iterable sao verdadeiros 
+#Retorna True qdo iterable = vazio!!!!
+
+print(all([])) #True --> iterable = vazio
+
+print(all([True, 1, {3}, [9]])) #True --> todos elementos sao True
+
+print(all([True, 1, {}, [9]])) #False --> {} vazio
+
